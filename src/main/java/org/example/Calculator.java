@@ -17,7 +17,9 @@ public class Calculator {
         return a * b;
     }
 
-    public float divide(int a, int b) {
-        return (float) a / b;
+    public String divide(int a, int b) {
+        if (b == 0) return "Divide by 0 is impossible";
+        
+        return String.valueOf(a / b);
     }
 }
